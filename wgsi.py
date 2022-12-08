@@ -1,3 +1,3 @@
-from main import app
+from Proyecto.main import app
 if __name__ == "__main__":
     app.run(debug=True)

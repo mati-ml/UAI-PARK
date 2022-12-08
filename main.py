@@ -7,13 +7,14 @@ from oauth2client.service_account import ServiceAccountCredentials
 scope = ['https://www.googleapis.com/auth/spreadsheets',
          "https://www.googleapis.com/auth/drive"]
 
-Credentials = ServiceAccountCredentials.from_json_keyfile_name(r"C:\Users\diego\OneDrive\Desktop\aaaa\claves.json", scope)
+Credentials = ServiceAccountCredentials.from_json_keyfile_name(r"C:\Users\diego\OneDrive\Desktop\SIUU\claves.json", scope)
 cliente = gspread.authorize(Credentials)
 
 sheet = cliente.open("Estacionamientos Database").sheet1
 x = sheet.acell("A1").value
 x = int(x)
 print(x)
+
 
 
 app = Flask(__name__)   
