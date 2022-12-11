@@ -33,7 +33,7 @@ def inicio():
             print(1)    
 
         return render_template("index.html", x=x)
-        time.sleep(3)
+        time.sleep(2)
 
   
 
